@@ -14,6 +14,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ageofingenuity.common.metatileentities.aoiMetaTileEntities;
 
 import gregtech.api.GTValues;
 import gregtech.api.unification.material.Material;
@@ -26,7 +27,9 @@ import static gregtech.api.unification.material.info.MaterialIconSet.*;
 
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]")
 public class aoi {
-
+    public static final String MODID = "ageofingenuity";
+    public static final String NAME = "Age Of Ingenuity";
+    public static final String VERSION = "@VERSION@";
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
 
     @EventHandler
@@ -36,7 +39,8 @@ public class aoi {
         MinecraftForge.EVENT_BUS.register(this);
         LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
 
-        
+        aoiMetaTileEntities.init();
+
     }
 
     @SubscribeEvent
