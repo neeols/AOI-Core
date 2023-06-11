@@ -12,4 +12,21 @@ public class aoiRecipeMaps {
             .setSound(GTSoundEvents.ASSEMBLER)
             .setSlotOverlay(false, false, true, GuiTextures.INT_CIRCUIT_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, ProgressWidget.MoveType.HORIZONTAL);
+
+    public static final RecipeMap<SimpleRecipeBuilder> MILL = new RecipeMap<>("mill",
+            0, 2, 0, 2, 0, 1, 0, 0, new SimpleRecipeBuilder(), false)
+            .setSound(GTSoundEvents.COMBUSTION)
+            .setSlotOverlay(false, false, true, GuiTextures.INT_CIRCUIT_OVERLAY)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_SLICE, ProgressWidget.MoveType.VERTICAL_DOWNWARDS);
+
+    public static final RecipeMap<SimpleRecipeBuilder> MORTAR_GRINDER = new RecipeMap<>("mortar_grinder",
+            0, 1, 0, 1, 0, 1, 0, 0, new SimpleRecipeBuilder(), false)
+            .setSound(GTSoundEvents.MACERATOR)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, ProgressWidget.MoveType.HORIZONTAL);
+
+    public static final RecipeMap<SimpleRecipeBuilder> ROASTER = new RecipeMap<>("roaster",
+            0, 1, 0, 1, 0, 0, 0, 0, new SimpleRecipeBuilder(), false)
+            .setSound(GTSoundEvents.ARC)
+            .setSlotOverlay(false, false, false, GuiTextures.FURNACE_OVERLAY_1)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, ProgressWidget.MoveType.HORIZONTAL);
 }
