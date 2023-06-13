@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class aoiClientHandler {
     public static OrientedOverlayRenderer CSTR_OVERLAY = new OrientedOverlayRenderer("ageofingenuity:machines/cstr");
-    public static OrientedOverlayRenderer MILL_OVERLAY = new OrientedOverlayRenderer("machines/bender");
+    public static OrientedOverlayRenderer MILL_OVERLAY = new OrientedOverlayRenderer("ageofingenuity:machines/mill");
     public static OrientedOverlayRenderer MORTAR_GRINDER_OVERLAY = new OrientedOverlayRenderer("ageofingenuity:machines/mortar_grinder");
     public static OrientedOverlayRenderer ROASTER_OVERLAY = new OrientedOverlayRenderer("ageofingenuity:machines/roaster");
 

@@ -18,7 +18,6 @@ public class aoiMetaTileEntities {
     public static SimpleMachineMetaTileEntity[] MORTAR_GRINDER = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
     public static SimpleMachineMetaTileEntity[] ROASTER = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
 
-
     public static void init() {
 
         MetaTileEntities.registerSimpleMetaTileEntity(CSTR, 8500, "cstr", aoiRecipeMaps.CSTR, aoiClientHandler.CSTR_OVERLAY, true, aoiMetaTileEntities::location, GTUtility.hvCappedTankSizeFunction);
