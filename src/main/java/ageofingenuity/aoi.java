@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ageofingenuity.common.metatileentities.aoiMetaTileEntities;
+import ageofingenuity.api.materials.aoiMaterials;
 
 import gregtech.api.GTValues;
 import gregtech.api.unification.material.Material;
@@ -40,7 +41,7 @@ public class aoi {
         LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
 
         aoiMetaTileEntities.init();
-
+        aoiMaterials.init();
     }
 
     @SubscribeEvent
