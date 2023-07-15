@@ -18,40 +18,40 @@ public class EnderioMaterials {
 
         PulsatingIron = new Material.Builder(22001, "pulsating_iron")
                 .ingot()
-                .color(0xCEFFC2).iconSet(SHINY)
+                .color(0xceffc2).iconSet(SHINY)
                 .build();
 
         ConductiveIron = new Material.Builder(22002, "conductive_iron")
                 .ingot()
-                .color(0xFFD4D4).iconSet(SHINY)
+                .color(0xffd4d4).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         EnergeticAlloy = new Material.Builder(22003, "energetic_alloy")
                 .ingot()
-                .color(0xFF970F).iconSet(SHINY)
+                .color(0xff970f).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         VibrantAlloy = new Material.Builder(22004, "vibrant_alloy")
                 .ingot()
-                .color(0x8CFF6A).iconSet(SHINY)
+                .color(0x8cff6a).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         Soularium = new Material.Builder(22005, "soularium")
                 .ingot()
-                .color(0xBFBFA1).iconSet(SHINY)
+                .color(0xbfbfa1).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         ElectricalSteel = new Material.Builder(22006, "electrical_steel")
                 .ingot()
-                .color(0x665E5E).iconSet(DULL)
+                .color(0x665e5e).iconSet(DULL)
                 // components here
                 // formula here
                 .build();
@@ -65,14 +65,14 @@ public class EnderioMaterials {
 
         RedstoneAlloy = new Material.Builder(22008, "redstone_alloy")
                 .ingot()
-                .color(0x6F2227).iconSet(SHINY)
+                .color(0x6f2227).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         EndSteel = new Material.Builder(22009, "end_steel")
                 .ingot()
-                .color(0x7A7A61).iconSet(DULL)
+                .color(0x7a7a61).iconSet(DULL)
                 // components here
                 // formula here
                 .build();
@@ -81,49 +81,49 @@ public class EnderioMaterials {
 
         CrystallineAlloy = new Material.Builder(22010, "crystalline_alloy")
                 .ingot()
-                .color(0x52EBFF).iconSet(SHINY)
+                .color(0x52ebff).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         MelodicAlloy = new Material.Builder(22011, "melodic_alloy")
                 .ingot()
-                .color(0x8B4A8C).iconSet(SHINY)
+                .color(0x8b4a8c).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         StellarAlloy = new Material.Builder(22012, "stellar_alloy")
                 .ingot()
-                .color(0xFDFFC7).iconSet(SHINY)
+                .color(0xfdffc7).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         EnergeticSilver = new Material.Builder(22013, "energetic_silver")
                 .ingot()
-                .color(0x3072FF).iconSet(SHINY)
+                .color(0xa6b2de).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         VividAlloy = new Material.Builder(22014, "vivid_alloy")
                 .ingot()
-                .color(0x32A7CF).iconSet(SHINY)
+                .color(0x32a7cf).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
 
         CrudeSteel = new Material.Builder(22015, "crude_steel")
                 .ingot()
-                .color(0xB3B3B3).iconSet(DULL)
+                .color(0xb3b3b3).iconSet(DULL)
                 // components here
                 // formula here
                 .build();
 
         CrystallinePinkSlime = new Material.Builder(22016, "crystalline_pink_slime")
                 .ingot()
-                .color(0xC86BC9).iconSet(SHINY)
+                .color(0xc86bc9).iconSet(SHINY)
                 // components here
                 // formula here
                 .build();
