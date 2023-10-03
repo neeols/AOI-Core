@@ -29,4 +29,9 @@ public class aoiRecipeMaps {
             .setSound(GTSoundEvents.ARC)
             .setSlotOverlay(false, false, false, GuiTextures.FURNACE_OVERLAY_1)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, ProgressWidget.MoveType.HORIZONTAL);
+    public static final RecipeMap<SimpleRecipeBuilder> MATURATION_VAT = new RecipeMap<>("maturation_vat",
+            0, 1, 0, 1, 0, 1, 0, 1, new SimpleRecipeBuilder(), false)
+            .setSound(GTSoundEvents.BATH)
+            .setSlotOverlay(false, true, true, GuiTextures.BREWER_OVERLAY)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_BATH, ProgressWidget.MoveType.VERTICAL_INVERTED);
 }

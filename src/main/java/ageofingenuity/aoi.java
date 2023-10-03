@@ -14,8 +14,10 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import ageofingenuity.common.metatileentities.aoiMetaTileEntities;
 import ageofingenuity.api.materials.aoiMaterials;
+import ageofingenuity.api.recipes.aoiRecipeHandler;
 
 import gregtech.api.GTValues;
 import gregtech.api.unification.material.Material;
@@ -47,7 +49,7 @@ public class aoi {
     @SubscribeEvent
     // Register recipes here (Remove if not needed)
     public void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-
+        aoiRecipeHandler.init();
     }
 
     @SubscribeEvent

@@ -23,8 +23,19 @@
  */
 dependencies {
     // Hard Dependencies
-    implementation rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:4641113") // GTCEu 2.7.1
     implementation rfg.deobf("curse.maven:codechicken-lib-1-8-242818:2779848") // CCL 3.2.3.358
+
+    implementation 'zone.rong:mixinbooter:7.0'
+
+    implementation files("libs/gregtech-1.12.2-2.7.3-beta-dev.jar")
+    implementation files("libs/gregtechfoodoption-1.9.4.1.jar")
+
+    implementation files("libs/Pam's HarvestCraft 1.12.2zg.jar")
+    implementation files("libs/pamscookables-1.1.jar")
+
+    implementation files("libs/AAInfo-1.0.1.jar")
+    implementation "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.554"
+    implementation files("libs/groovyscript-0.6.1.jar")
 
     // Soft Dependencies
     compileOnlyApi rfg.deobf("curse.maven:ctm-267602:2915363") // CTM 1.0.2.31

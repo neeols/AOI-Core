@@ -17,6 +17,7 @@ public class aoiMetaTileEntities {
     public static SimpleMachineMetaTileEntity[] MILL = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
     public static SimpleMachineMetaTileEntity[] MORTAR_GRINDER = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
     public static SimpleMachineMetaTileEntity[] ROASTER = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
+    public static SimpleMachineMetaTileEntity[] MATURATION_VAT = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
 
     public static void init() {
 
@@ -24,6 +25,7 @@ public class aoiMetaTileEntities {
         MetaTileEntities.registerSimpleMetaTileEntity(MILL, 20015, "mill", aoiRecipeMaps.MILL, aoiClientHandler.MILL_OVERLAY, true, aoiMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
         MetaTileEntities.registerSimpleMetaTileEntity(MORTAR_GRINDER, 20030, "mortar_grinder", aoiRecipeMaps.MORTAR_GRINDER, aoiClientHandler.MORTAR_GRINDER_OVERLAY, true, aoiMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
         MetaTileEntities.registerSimpleMetaTileEntity(ROASTER, 20045, "roaster", aoiRecipeMaps.ROASTER, aoiClientHandler.ROASTER_OVERLAY, true, aoiMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
+        MetaTileEntities.registerSimpleMetaTileEntity(MATURATION_VAT, 20060, "maturation_vat", aoiRecipeMaps.MATURATION_VAT, aoiClientHandler.MATURATION_VAT_OVERLAY, false, aoiMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
 
     }
 

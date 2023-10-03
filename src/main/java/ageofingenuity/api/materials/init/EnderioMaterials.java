@@ -10,7 +10,7 @@ import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
 import static ageofingenuity.api.materials.aoiMaterials.*;
 import static ageofingenuity.aoiValues.resLoc;
-
+// 22001-22016
 public class EnderioMaterials {
 
     public static void init() {

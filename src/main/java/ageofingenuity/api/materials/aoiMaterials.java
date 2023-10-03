@@ -33,7 +33,16 @@ public class aoiMaterials {
     public static Material CrystallinePinkSlime;
     public static Material EnergeticSilver;
     public static Material VividAlloy;
-
+    public static Material BarleyMalt;
+    public static Material BarleyMash;
+    public static Material ImpureWort;
+    public static Material BoiledImpureWort;
+    public static Material HotWort;
+    public static Material Trub;
+    public static Material Wort;
+    public static Material ImmatureBeer;
+    public static Material Beer;
+    public static Material Yeast;
 
 
     // chemicals
