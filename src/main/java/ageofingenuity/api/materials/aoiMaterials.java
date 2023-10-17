@@ -33,6 +33,9 @@ public class aoiMaterials {
     public static Material CrystallinePinkSlime;
     public static Material EnergeticSilver;
     public static Material VividAlloy;
+
+    // alcohol
+
     public static Material BarleyMalt;
     public static Material BarleyMash;
     public static Material ImpureWort;
@@ -43,12 +46,16 @@ public class aoiMaterials {
     public static Material ImmatureBeer;
     public static Material Beer;
     public static Material Yeast;
-
+    public static Material Bagasse; // need to make it a fuel source
+    public static Material CaneJuice;
+    public static Material RawMolasses;
+    public static Material Molasses;
+    public static Material RedWinePreferment;
+    public static Material YoungRedWine;
 
     // chemicals
 
     // main materials
-
 
     public static void init() {
         Chemicals.init();

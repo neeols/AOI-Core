@@ -16,6 +16,8 @@ import static ageofingenuity.api.materials.aoiMaterials.*;
 public class MainMaterials {
 
     public static void init() {
+        //beer
+
         BarleyMalt = new Material.Builder(22017, resLoc("barley_malt"))
                 .dust()
                 .color(0xc9c789)
@@ -57,6 +59,30 @@ public class MainMaterials {
         Yeast = new Material.Builder(22026, resLoc("yeast"))
                 .dust()
                 .color(0xfae1ac)
+                .build();
+        Bagasse = new Material.Builder(22027, resLoc("bagasse"))
+                .dust()
+                .color(0xdac586)
+                .build();
+        CaneJuice = new Material.Builder(22028, resLoc("canejuice"))
+                .fluid()
+                .color(0xaefd6c)
+                .build();
+        RawMolasses = new Material.Builder(22029, resLoc("raw_molasses"))
+                .fluid()
+                .color(0x4f2c2a)
+                .build();
+        Molasses = new Material.Builder(22030, resLoc("molasses"))
+                .fluid()
+                .color(0x574a47)
+                .build();
+        RedWinePreferment = new Material.Builder(22031, resLoc("red_wine_preferment"))
+                .fluid()
+                .color(0x641b30)
+                .build();
+        YoungRedWine = new Material.Builder(22032, resLoc("young_red_wine"))
+                .fluid()
+                .color(0x591620)
                 .build();
     }
 }

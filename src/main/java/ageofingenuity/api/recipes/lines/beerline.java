@@ -20,10 +20,23 @@ import static gregtech.api.unification.ore.OrePrefix.*;
 
 public class beerline {
     public static void init() {
+        // yeast
+        RecipeMaps.FERMENTING_RECIPES.recipeBuilder().EUt(32).duration(1000) // 50 secs LV
+                .input("listAllfruit",4)
+                .fluidInputs(FluidRegistry.getFluidStack("gtfo_sweetened_diluted_cane_syrup_mixture", 150))
+                .output(dust, aoiMaterials.Yeast, 15)
+                .buildAndRegister();
+        RecipeMaps.FERMENTING_RECIPES.recipeBuilder().EUt(32).duration(800) // 30 secs LV
+                .input("dustWheat", 10)
+                .fluidInputs(FluidRegistry.getFluidStack("gtfo_sweetened_diluted_cane_syrup_mixture", 100))
+                .output(dust, aoiMaterials.Yeast, 8)
+                .buildAndRegister();
+        // beer
         aoiRecipeMaps.MILL.recipeBuilder().EUt(32).duration(100) // 5 secs LV
                 .input("cropBarley",1)
                 .output(dust, aoiMaterials.BarleyMalt, 1 )
-                .buildAndRegister();
+                .buildAndRegister(); // 5 secs LV
+
         aoiRecipeMaps.MORTAR_GRINDER.recipeBuilder().EUt(32).duration(100) // 5 secs LV
                 .input(dust, aoiMaterials.BarleyMalt, 1)
                 .output(dust, aoiMaterials.BarleyMash, 1 )
@@ -33,7 +46,7 @@ public class beerline {
                 .fluidInputs(FluidRegistry.getFluidStack("gtfo_heated_water", 1000))
                 .fluidOutputs(aoiMaterials.ImpureWort.getFluid(1000))
                 .buildAndRegister();
-        RecipeMaps.FLUID_HEATER_RECIPES.recipeBuilder().EUt(32).duration(450) // 22.5 secs LV
+        RecipeMaps.FLUID_HEATER_RECIPES.recipeBuilder().EUt(128).duration(450) // 22.5 secs MV
                 .fluidInputs(aoiMaterials.ImpureWort.getFluid(10000))
                 .fluidOutputs(aoiMaterials.BoiledImpureWort.getFluid(9000))
                 .buildAndRegister();
@@ -41,18 +54,18 @@ public class beerline {
                 .fluidInputs(aoiMaterials.BoiledImpureWort.getFluid(2000))
                 .fluidOutputs(aoiMaterials.HotWort.getFluid(1000), aoiMaterials.Trub.getFluid(1000))
                 .buildAndRegister();
-        RecipeMaps.MIXER_RECIPES.recipeBuilder().EUt(32).duration(500) // 25 secs LV
+        RecipeMaps.MIXER_RECIPES.recipeBuilder().EUt(128).duration(500) // 25 secs LV
                 .fluidInputs(aoiMaterials.HotWort.getFluid(1000))
                 .fluidOutputs(aoiMaterials.Wort.getFluid(1000))
                 .buildAndRegister();
-        RecipeMaps.FERMENTING_RECIPES.recipeBuilder().EUt(32).duration(3600) // 3 mins LV
+        RecipeMaps.FERMENTING_RECIPES.recipeBuilder().EUt(32).duration(2400) // 2 mins LV
                 .input(dust, aoiMaterials.Yeast, 10)
                 .fluidInputs(aoiMaterials.Wort.getFluid(1000))
                 .fluidOutputs(aoiMaterials.ImmatureBeer.getFluid(1000))
                 .buildAndRegister();
         aoiRecipeMaps.MATURATION_VAT.recipeBuilder().EUt(32).duration(12000) // 10 mins LV
-                .fluidInputs(aoiMaterials.ImmatureBeer.getFluid(10000))
-                .fluidOutputs(aoiMaterials.Beer.getFluid(10000))
+                .fluidInputs(aoiMaterials.ImmatureBeer.getFluid(8000))
+                .fluidOutputs(aoiMaterials.Beer.getFluid(8000))
                 .buildAndRegister();
     }
 }

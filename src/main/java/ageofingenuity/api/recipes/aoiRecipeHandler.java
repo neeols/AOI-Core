@@ -13,6 +13,7 @@ public class aoiRecipeHandler {
         polyepichlorohydrin.init();
         polytetrafluoroethylene.init();
         wineline.init();
+        reworks.init();
     }
 
     public static void lowInit() {

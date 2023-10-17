@@ -24,6 +24,12 @@ ageofingenuity.material.trub=Trub
 ageofingenuity.material.immature_beer=Green Beer
 ageofingenuity.material.beer=Beer
 ageofingenuity.material.yeast=Yeast
+ageofingenuity.material.bagasse=Bagasse
+ageofingenuity.material.canejuice=Sugarcane Juice
+ageofingenuity.material.molasses=Molasses
+ageofingenuity.material.raw_molasses=Raw Molasses
+ageofingenuity.material.red_wine_preferment=Red Wine Preferment
+ageofingenuity.material.young_red_wine=Young Red Wine
 
 ageofingenuity.machine.mill.lv.name=Basic Cluster Mill
 ageofingenuity.machine.mill.mv.name=Advanced Cluster Mill
