@@ -1,8 +1,6 @@
 package ageofingenuity.api.recipes;
 
-import ageofingenuity.aoiValues;
 import ageofingenuity.api.recipes.lines.*;
-import net.minecraftforge.fml.common.Loader;
 
 public class aoiRecipeHandler {
     public static void init() {
@@ -14,6 +12,7 @@ public class aoiRecipeHandler {
         polytetrafluoroethylene.init();
         wineline.init();
         reworks.init();
+        mainmaterials.init();
     }
 
     public static void lowInit() {

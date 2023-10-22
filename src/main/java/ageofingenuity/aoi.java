@@ -1,5 +1,6 @@
 package ageofingenuity;
 
+import ageofingenuity.api.materials.init.RegisterOreDicts;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
@@ -18,6 +19,7 @@ import org.apache.logging.log4j.Logger;
 import ageofingenuity.common.metatileentities.aoiMetaTileEntities;
 import ageofingenuity.api.materials.aoiMaterials;
 import ageofingenuity.api.recipes.aoiRecipeHandler;
+import ageofingenuity.api.materials.init.RegisterOreDicts.*;
 
 import gregtech.api.GTValues;
 import gregtech.api.unification.material.Material;
@@ -67,6 +69,7 @@ public class aoi {
     @EventHandler
     // load "Do your mod setup. Build whatever data structures you care about." (Remove if not needed)
     public void init(FMLInitializationEvent event) {
+        RegisterOreDicts.AddOreDicts();
     }
 
     @EventHandler
