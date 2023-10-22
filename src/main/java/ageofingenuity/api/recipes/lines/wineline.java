@@ -26,7 +26,7 @@ public class wineline {
                 .output(gem, Materials.Sugar, 5)
                 .buildAndRegister();
         RecipeMaps.MIXER_RECIPES.recipeBuilder().EUt(32).duration(1200) // 1 min LV
-                .input("cropGrape",20)
+                .input("cropRedgrape",20)
                 .input(dust, aoiMaterials.Yeast, 10)
                 .fluidInputs(aoiMaterials.Molasses.getFluid(2000), aoiMaterials.CaneJuice.getFluid(2000))
                 .fluidOutputs(aoiMaterials.RedWinePreferment.getFluid(5000))
