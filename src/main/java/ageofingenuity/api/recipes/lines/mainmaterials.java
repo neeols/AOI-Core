@@ -1,25 +1,26 @@
 package ageofingenuity.api.recipes.lines;
-import gregtech.api.recipes.ModHandler;
+import ageofingenuity.api.materials.AOIMaterials;
 import gregtech.api.recipes.RecipeMaps;
-import gregtech.common.items.MetaItems;
-import ageofingenuity.api.recipes.aoiRecipeMaps;
-import ageofingenuity.aoiValues;
-import net.minecraft.item.ItemStack;
+
 import static gregtech.api.unification.material.Materials.*;
-import static ageofingenuity.client.aoiClientHandler.*;
+import static ageofingenuity.client.AOIClientHandler.*;
 import gregtech.api.unification.OreDictUnifier;
-import gregtech.api.unification.material.Materials;
-import ageofingenuity.api.materials.aoiMaterials;
+import ageofingenuity.api.materials.AOIMaterials;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import static gregtech.api.unification.ore.OrePrefix.ingot;
 
 public class mainmaterials {
     public static void init() {
         // crude steel
-        GameRegistry.addSmelting(OreDictUnifier.get(ingot, Materials.WroughtIron), OreDictUnifier.get(ingot, aoiMaterials.CrudeSteel), 0);
+        GameRegistry.addSmelting(OreDictUnifier.get(ingot, WroughtIron), OreDictUnifier.get(ingot, AOIMaterials.CrudeSteel), 0);
         RecipeMaps.FURNACE_RECIPES.recipeBuilder().EUt(8).duration(60)
                 .input(ingot, WroughtIron)
-                .output(ingot, aoiMaterials.CrudeSteel)
+                .output(ingot, AOIMaterials.CrudeSteel)
+                .buildAndRegister();
+        GameRegistry.addSmelting(OreDictUnifier.get(ingot, Iron), OreDictUnifier.get(ingot, WroughtIron), 0);
+        RecipeMaps.FURNACE_RECIPES.recipeBuilder().EUt(8).duration(60)
+                .input(ingot, Iron)
+                .output(ingot, WroughtIron)
                 .buildAndRegister();
     }
 }

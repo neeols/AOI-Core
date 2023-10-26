@@ -8,8 +8,6 @@ import gregtech.api.unification.material.properties.BlastProperty;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.material.info.MaterialFlags.*;
 import static gregtech.api.unification.material.info.MaterialIconSet.*;
-import static ageofingenuity.api.materials.aoiMaterials.*;
-
 public class Chemicals {
 
     public static void init() {

@@ -1,15 +1,9 @@
 package ageofingenuity.api.materials.init;
 
-import gregtech.api.GTValues;
 import gregtech.api.unification.material.Material;
-import gregtech.api.unification.material.info.MaterialIconSet;
-import gregtech.api.unification.material.properties.BlastProperty;
 
-import static ageofingenuity.aoiValues.resLoc;
-import static gregtech.api.unification.material.Materials.*;
-import static gregtech.api.unification.material.info.MaterialFlags.*;
-import static gregtech.api.unification.material.info.MaterialIconSet.*;
-import static ageofingenuity.api.materials.aoiMaterials.*;
+import static ageofingenuity.AOIValues.resLoc;
+import static ageofingenuity.api.materials.AOIMaterials.*;
 
 //22017
 

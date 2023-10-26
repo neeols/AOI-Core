@@ -1,6 +1,9 @@
 package ageofingenuity;
 
+import ageofingenuity.api.materials.AOIMaterials;
 import ageofingenuity.api.materials.init.RegisterOreDicts;
+import ageofingenuity.api.recipes.AOIRecipeHandler;
+import ageofingenuity.common.metatileentities.AOIMetaTileEntities;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
@@ -16,22 +19,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import ageofingenuity.common.metatileentities.aoiMetaTileEntities;
-import ageofingenuity.api.materials.aoiMaterials;
-import ageofingenuity.api.recipes.aoiRecipeHandler;
-import ageofingenuity.api.materials.init.RegisterOreDicts.*;
-
-import gregtech.api.GTValues;
-import gregtech.api.unification.material.Material;
-import gregtech.api.unification.material.info.MaterialIconSet;
-import gregtech.api.unification.material.properties.BlastProperty;
-
-import static gregtech.api.unification.material.Materials.*;
-import static gregtech.api.unification.material.info.MaterialFlags.*;
-import static gregtech.api.unification.material.info.MaterialIconSet.*;
-
 @Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]")
-public class aoi {
+public class AOI {
     public static final String MODID = "ageofingenuity";
     public static final String NAME = "Age Of Ingenuity";
     public static final String VERSION = "@VERSION@";
@@ -44,14 +33,14 @@ public class aoi {
         MinecraftForge.EVENT_BUS.register(this);
         LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
 
-        aoiMetaTileEntities.init();
-        aoiMaterials.init();
+        AOIMetaTileEntities.init();
+        AOIMaterials.init();
     }
 
     @SubscribeEvent
     // Register recipes here (Remove if not needed)
     public void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-        aoiRecipeHandler.init();
+        AOIRecipeHandler.init();
     }
 
     @SubscribeEvent

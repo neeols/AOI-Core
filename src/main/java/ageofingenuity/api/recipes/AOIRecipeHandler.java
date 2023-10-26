@@ -2,7 +2,7 @@ package ageofingenuity.api.recipes;
 
 import ageofingenuity.api.recipes.lines.*;
 
-public class aoiRecipeHandler {
+public class AOIRecipeHandler {
     public static void init() {
         beerline.init();
         epoxy.init();

@@ -1,16 +1,6 @@
 package ageofingenuity.api.recipes.lines;
 
-import gregtech.api.recipes.ModHandler;
-import gregtech.api.recipes.RecipeMaps;
-import gregtech.common.items.MetaItems;
-import ageofingenuity.api.recipes.aoiRecipeMaps;
-import ageofingenuity.aoiValues;
-import net.minecraft.item.ItemStack;
-
-import static gregtech.api.unification.material.Materials.*;
-import static gregtech.api.unification.ore.OrePrefix.dust;
-import static gregtech.api.unification.ore.OrePrefix.dustTiny;
-import static ageofingenuity.client.aoiClientHandler.*;
+import static ageofingenuity.client.AOIClientHandler.*;
 public class polyvinyl_chloride {
     public static void init() {
         /*
