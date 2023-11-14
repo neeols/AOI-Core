@@ -11,16 +11,6 @@ import static gregtech.api.unification.ore.OrePrefix.ingot;
 
 public class mainmaterials {
     public static void init() {
-        // crude steel
-        GameRegistry.addSmelting(OreDictUnifier.get(ingot, WroughtIron), OreDictUnifier.get(ingot, AOIMaterials.CrudeSteel), 0);
-        RecipeMaps.FURNACE_RECIPES.recipeBuilder().EUt(8).duration(60)
-                .input(ingot, WroughtIron)
-                .output(ingot, AOIMaterials.CrudeSteel)
-                .buildAndRegister();
-        GameRegistry.addSmelting(OreDictUnifier.get(ingot, Iron), OreDictUnifier.get(ingot, WroughtIron), 0);
-        RecipeMaps.FURNACE_RECIPES.recipeBuilder().EUt(8).duration(60)
-                .input(ingot, Iron)
-                .output(ingot, WroughtIron)
-                .buildAndRegister();
+        //GameRegistry.addSmelting(OreDictUnifier.get(ingot, WroughtIron), OreDictUnifier.get(ingot, AOIMaterials.CrudeSteel), 0);
     }
 }
