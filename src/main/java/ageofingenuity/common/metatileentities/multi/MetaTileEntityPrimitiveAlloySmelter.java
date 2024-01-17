@@ -37,6 +37,7 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.commons.lang3.ArrayUtils;
@@ -61,8 +62,8 @@ public class MetaTileEntityPrimitiveAlloySmelter extends RecipeMapPrimitiveMulti
                 .aisle("AAA", "CCC", "CCC")
                 .aisle("AAA", "C&C", "C#C")
                 .aisle("AAA", "CSC", "CCC")
-                .where('A', // (metastate) modpack:refractorycement
-                .where('C', // (metastate) modpack:refractorycementbricks
+                .where('A', states((IBlockState) ForgeRegistries.BLOCKS.getValue(new ResourceLocation("modpack:refractorycement"))))
+                .where('C', states((IBlockState) ForgeRegistries.BLOCKS.getValue(new ResourceLocation("modpack:refractorycementbricks"))))
                 .where('#', air())
                 .where('&', air().or(IS_SNOW_LAYER)) // this won't stay in the structure, and will be broken while running
                 .where('S', selfPredicate())
