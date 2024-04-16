@@ -1,73 +1,61 @@
 package ageofingenuity;
 
-import ageofingenuity.api.materials.AOIMaterials;
+import ageofingenuity.api.block.registry.AOIMetaBlocks;
 import ageofingenuity.api.materials.init.RegisterOreDicts;
-import ageofingenuity.api.recipes.AOIRecipeHandler;
 import ageofingenuity.common.metatileentities.AOIMetaTileEntities;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.*;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import gregtech.GTInternalTags;
+import ageofingenuity.client.ClientProxy;
+import ageofingenuity.common.CommonProxy;
+import ageofingenuity.util.AOISide;
 
-@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = Tags.MODID, version = Tags.VERSION, name = Tags.MODNAME, acceptedMinecraftVersions = "[1.12.2]",  dependencies = GTInternalTags.DEP_VERSION_STRING)
 public class AOI {
+
     public static final String MODID = "ageofingenuity";
     public static final String NAME = "Age Of Ingenuity";
     public static final String VERSION = "@VERSION@";
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODID);
 
     @EventHandler
-    // preInit Run before anything else. Read your config, create blocks, items, etc. (Remove if not needed)
     public void preInit(FMLPreInitializationEvent event) {
-        // register to the event bus so that we can listen to events
         MinecraftForge.EVENT_BUS.register(this);
-        LOGGER.info("I am " + Tags.MODNAME + " + at version " + Tags.VERSION);
 
+        AOIMetaBlocks.preInit();
         AOIMetaTileEntities.init();
-        AOIMaterials.init();
-    }
 
-    @SubscribeEvent
-    // Register recipes here (Remove if not needed)
-    public void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-        AOIRecipeHandler.init();
-    }
+        if (AOISide.isClient())
+            ClientProxy.earlyPreInit();
 
-    @SubscribeEvent
-    // Register items here (Remove if not needed)
-    public void registerItems(RegistryEvent.Register<Item> event) {
+        CommonProxy.preInit();
 
-    }
-
-    @SubscribeEvent
-    // Register blocks here (Remove if not needed)
-    public void registerBlocks(RegistryEvent.Register<Block> event) {
-
+        if (AOISide.isClient())
+            ClientProxy.latePreInit();
     }
 
     @EventHandler
-    // load "Do your mod setup. Build whatever data structures you care about." (Remove if not needed)
-    public void init(FMLInitializationEvent event) {
-        RegisterOreDicts.AddOreDicts();
+    public void loadComplete(FMLLoadCompleteEvent event) {
+        CommonProxy.loadComplete();
     }
 
     @EventHandler
-    // postInit "Handle interaction with other mods, complete your setup based on this." (Remove if not needed)
-    public void postInit(FMLPostInitializationEvent event) {
+    public void serverStopped(FMLServerStoppedEvent event) {
+//        DataFixerHandler.close();
     }
 
-    @EventHandler
-    // register server commands in this event handler (Remove if not needed)
-    public void serverStarting(FMLServerStartingEvent event) {
+    static {
+        FluidRegistry.enableUniversalBucket();
     }
 }
