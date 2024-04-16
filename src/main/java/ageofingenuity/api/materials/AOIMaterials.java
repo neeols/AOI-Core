@@ -9,7 +9,15 @@ public class AOIMaterials {
         ElementMaterials.init();
         Chemicals.init();
         EnderioMaterials.init();
-        MainMaterials.init();
+        MainMaterials.initSteamAge();
+        MainMaterials.initAlkahaal(); // boi is jus alkahaal
+    }
+
+    public static void materialChanges() {
+        AOIMatProperties.propertyChanges();
+        AOIMatProperties.flagChanges();
+        AOIMatProperties.miscChanges();
+        AOIMatProperties.setFormulas();
     }
 
     // enderio
@@ -30,8 +38,7 @@ public class AOIMaterials {
     public static Material EnergeticSilver;
     public static Material VividAlloy;
 
-    // alcohol
-
+    // boi is jus alkahaal
     public static Material BarleyMalt;
     public static Material BarleyMash;
     public static Material ImpureWort;
@@ -52,6 +59,12 @@ public class AOIMaterials {
     // chemicals
 
     //a
+
+    // steam age
+
+    public static Material Limestone;
+    public static Material BurntLimestone;
+    public static Material FireCement;
 
     // elements
     public static Material Newtonium;

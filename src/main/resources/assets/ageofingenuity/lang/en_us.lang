@@ -199,3 +199,5 @@ tile.ageofingenuity.refractorycement.name=Refractory Cement
 item.ageofingenuity.steampiston.name=Steam Piston
 item.ageofingenuity.steammotor.name=Steam Motor
 item.ageofingenuity.cokeclaymixture.name=Coke-Clay Mixture
+
+itemGroup.ageofingenuity.main=AOI-Core

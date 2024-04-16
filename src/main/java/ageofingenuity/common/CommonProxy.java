@@ -68,7 +68,7 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void materialChanges(PostMaterialEvent event) {
-//        AOIMaterials.materialChanges();
+        AOIMaterials.materialChanges();
     }
 
     @SubscribeEvent

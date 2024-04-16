@@ -47,6 +47,7 @@ dependencies {
     implementation rfg.deobf("curse.maven:ctm-267602:2915363")
     implementation rfg.deobf("curse.maven:ae2-extended-life-570458:5147702")
 
+    implementation rfg.deobf("curse.maven:gregicality-multiblocks-564858:5121714")
     implementation rfg.deobf("curse.maven:gregtech-ce-unofficial-557242:5121638")
     implementation rfg.deobf("curse.maven:gregtech-food-option-477021:5155451")
 
