@@ -114,6 +114,10 @@ ageofingenuity.material.galaxium=Galaxium
 ageofingenuity.material.copium=Copium
 ageofingenuity.material.hyperion=Hyperion
 
+ageofingenuity.material.limestone=Limestone
+ageofingenuity.material.burnt_limestone=Burnt Limestone
+ageofingenuity.material.fire_cement=Fire Cement
+
 ageofingenuity.machine.mill.lv.name=Basic Cluster Mill
 ageofingenuity.machine.mill.mv.name=Advanced Cluster Mill
 ageofingenuity.machine.mill.hv.name=Advanced Cluster Mill II

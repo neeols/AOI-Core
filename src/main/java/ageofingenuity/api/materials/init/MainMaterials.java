@@ -8,24 +8,24 @@ import static ageofingenuity.api.materials.AOIMaterials.*;
 //22017
 
 public class MainMaterials {
-
+    // 22051-22100
     public static void initSteamAge() {
 
-        Limestone = new Material.Builder(22032, resLoc("young_red_wine"))
+        Limestone = new Material.Builder(22051, resLoc("limestone"))
                 .dust()
                 .color(0xdcd8c7)
                 .build();
-        BurntLimestone = new Material.Builder(22032, resLoc("young_red_wine"))
+        BurntLimestone = new Material.Builder(22052, resLoc("burnt_limestone"))
                 .dust()
                 .color(0x999171)
                 .build();
-        FireCement = new Material.Builder(22032, resLoc("young_red_wine"))
+        FireCement = new Material.Builder(22053, resLoc("fire_cement"))
                 .dust()
                 .color(0x957469)
                 .build();
     }
 
-    //boi is jus alkahaal
+    //boi is jus alkahaal 22017-22050
     public static void initAlkahaal() {
         BarleyMalt = new Material.Builder(22017, resLoc("barley_malt"))
                 .dust()

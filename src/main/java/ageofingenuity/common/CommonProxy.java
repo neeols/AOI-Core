@@ -63,7 +63,7 @@ public class CommonProxy {
 
     @SubscribeEvent(priority = EventPriority.HIGH)
     public static void registerMaterials(MaterialEvent event) {
-
+        AOIMaterials.init();
     }
 
     @SubscribeEvent
