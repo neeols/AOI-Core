@@ -189,3 +189,9 @@ recipemap.cstr.name=CSTR
 recipemap.mortar_grinder.name=Mortar Grinder
 recipemap.roaster.name=Roaster
 recipemap.maturation_vat.name=Maturation Vat
+recipemap.primitive_alloy_smelter.name=Primitive Alloy Smelter
+
+gregtech.machine.primitive_alloy_smelter.name=Primitive Alloy Smelter
+
+tile.ageofingenuity.refractorycementbricks.name=Refractory Cement Bricks
+tile.ageofingenuity.refractorycement.name=Refractory Cement

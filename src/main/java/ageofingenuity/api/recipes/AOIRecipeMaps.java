@@ -37,6 +37,6 @@ public class AOIRecipeMaps {
             .setProgressBar(GuiTextures.PROGRESS_BAR_BATH, ProgressWidget.MoveType.VERTICAL_INVERTED);
 
     public static final RecipeMap<PrimitiveRecipeBuilder> PRIMITIVE_ALLOY_SMELTER_RECIPES = new RecipeMap<>(
-            "primitive_alloy_smelter", 3, false, 3, false, 0, false, 0, false, new PrimitiveRecipeBuilder(), false)
+            "primitive_alloy_smelter", 4, false, 3, false, 0, false, 0, false, new PrimitiveRecipeBuilder(), false)
             .setSound(GTSoundEvents.FIRE);
 }

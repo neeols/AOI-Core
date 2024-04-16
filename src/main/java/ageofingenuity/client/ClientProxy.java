@@ -1,5 +1,6 @@
 package ageofingenuity.client;
 
+import ageofingenuity.api.AOITextures;
 import ageofingenuity.api.block.registry.AOIMetaBlocks;
 import ageofingenuity.api.item.registry.AOIItems;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
@@ -47,7 +48,7 @@ import java.util.UUID;
 public class ClientProxy {
 
     public static void earlyPreInit() {
-        //LabsTextures.preInit();
+        AOITextures.preInit();
     }
 
     public static void latePreInit() {

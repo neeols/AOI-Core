@@ -1,5 +1,6 @@
 package ageofingenuity.common.metatileentities.multi;
 
+import ageofingenuity.api.AOITextures;
 import ageofingenuity.api.block.registry.AOIBlocks;
 import ageofingenuity.api.recipes.AOIRecipeMaps;
 import gregtech.api.GTValues;
@@ -77,7 +78,7 @@ public class MetaTileEntityPrimitiveAlloySmelter extends RecipeMapPrimitiveMulti
     @SideOnly(Side.CLIENT)
     @Override
     public ICubeRenderer getBaseTexture(IMultiblockPart sourcePart) {
-        return Textures.PRIMITIVE_BRICKS;
+        return AOITextures.REFRACTORY_CEMENT_BRICKS;
     }
 
     @Override
@@ -85,21 +86,23 @@ public class MetaTileEntityPrimitiveAlloySmelter extends RecipeMapPrimitiveMulti
         return ModularUI.builder(GuiTextures.PRIMITIVE_BACKGROUND, 176, 166)
                 .shouldColor(false)
                 .widget(new LabelWidget(5, 5, getMetaFullName()))
-                .widget(new SlotWidget(importItems, 0, 52, 20, true, true)
-                        .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_INGOT_OVERLAY))
-                .widget(new SlotWidget(importItems, 1, 52, 38, true, true)
+                .widget(new SlotWidget(importItems, 0, 16, 38, true, true)
                         .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_DUST_OVERLAY))
-                .widget(new SlotWidget(importItems, 2, 52, 56, true, true)
+                .widget(new SlotWidget(importItems, 1, 34, 38, true, true)
+                        .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_DUST_OVERLAY))
+                .widget(new SlotWidget(importItems, 2, 52, 38, true, true)
+                        .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_DUST_OVERLAY))
+                .widget(new SlotWidget(importItems, 3, 34, 56, true, true)
                         .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_FURNACE_OVERLAY))
                 .widget(new RecipeProgressWidget(recipeMapWorkable::getProgressPercent, 77, 39, 20, 15,
                         GuiTextures.PRIMITIVE_BLAST_FURNACE_PROGRESS_BAR, ProgressWidget.MoveType.HORIZONTAL,
-                        RecipeMaps.PRIMITIVE_BLAST_FURNACE_RECIPES))
+                        AOIRecipeMaps.PRIMITIVE_ALLOY_SMELTER_RECIPES))
                 .widget(new SlotWidget(exportItems, 0, 104, 38, true, false)
                         .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_INGOT_OVERLAY))
                 .widget(new SlotWidget(exportItems, 1, 122, 38, true, false)
-                        .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_DUST_OVERLAY))
+                        .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_INGOT_OVERLAY))
                 .widget(new SlotWidget(exportItems, 2, 140, 38, true, false)
-                        .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_DUST_OVERLAY))
+                        .setBackgroundTexture(GuiTextures.PRIMITIVE_SLOT, GuiTextures.PRIMITIVE_INGOT_OVERLAY))
                 .bindPlayerInventory(entityPlayer.inventory, GuiTextures.PRIMITIVE_SLOT, 0);
     }
 
