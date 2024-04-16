@@ -23,9 +23,9 @@ public class AOITextures {
     }
 
     /**
-     * Like the one in TextureArea, but with Labs Registry.
+     * Like the one in TextureArea, but with AOI Registry.
      */
-    public static TextureArea labsFullImage(String imageLocation) {
+    public static TextureArea aoiFullImage(String imageLocation) {
         return new TextureArea(AOINames.makeAOIName(imageLocation), 0.0, 0.0, 1.0, 1.0);
     }
 }

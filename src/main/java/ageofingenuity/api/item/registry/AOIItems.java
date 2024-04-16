@@ -28,7 +28,9 @@ public class AOIItems {
     private static final List<Item> ITEMS = new ArrayList<>();
 
     private static final Set<Item> NO_MODEL_HANDLING_ITEMS = new HashSet<>();
-    public static ItemBase NOMICOIN_1;
+    public static ItemBase COKECLAYMIXTURE;
+    public static ItemBase MOTOR_STEAM;
+    public static ItemBase PISTON_STEAM;
 
     public static void preInit() {
         /* Coins */

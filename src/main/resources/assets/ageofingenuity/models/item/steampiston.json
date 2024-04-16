@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "modpack:items/steampiston"
+    "layer0": "ageofingenuity:items/steampiston"
   }
 }

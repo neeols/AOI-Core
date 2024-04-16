@@ -195,3 +195,7 @@ gregtech.machine.primitive_alloy_smelter.name=Primitive Alloy Smelter
 
 tile.ageofingenuity.refractorycementbricks.name=Refractory Cement Bricks
 tile.ageofingenuity.refractorycement.name=Refractory Cement
+
+item.ageofingenuity.steampiston.name=Steam Piston
+item.ageofingenuity.steammotor.name=Steam Motor
+item.ageofingenuity.cokeclaymixture.name=Coke-Clay Mixture

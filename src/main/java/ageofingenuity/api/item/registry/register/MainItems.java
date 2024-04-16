@@ -10,6 +10,8 @@ import static ageofingenuity.api.item.registry.AOIItems.*;
 
 public class MainItems {
     public static void init() {
-        //NOMICOIN_1 = createItem(new ItemBase(makeAOIName("nomicoin"), AOICreativeTabs.TAB_AOI));
+        COKECLAYMIXTURE = createItem(new ItemBase(makeAOIName("cokeclaymixture"), AOICreativeTabs.TAB_AOI));
+        MOTOR_STEAM = createItem(new ItemBase(makeAOIName("steammotor"), AOICreativeTabs.TAB_AOI));
+        PISTON_STEAM = createItem(new ItemBase(makeAOIName("steampiston"), AOICreativeTabs.TAB_AOI));
     }
 }
