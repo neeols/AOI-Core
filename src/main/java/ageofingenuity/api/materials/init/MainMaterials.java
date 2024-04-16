@@ -22,32 +22,32 @@ public class MainMaterials {
                 .color(0xb4b895)
                 .build();
         ImpureWort = new Material.Builder(22019, resLoc("impure_wort"))
-                .fluid()
+                .liquid()
                 .color(0xa8870f)
                 .build();
         BoiledImpureWort = new Material.Builder(22020, resLoc("boiled_impure_wort"))
-                .fluid()
+                .liquid()
                 .color(0x6b5918)
                 .build();
         HotWort = new Material.Builder(22021, resLoc("hot_wort"))
-                .fluid()
+                .liquid()
                 .color(0x8c351c)
                 .build();
         Wort = new Material.Builder(22022, resLoc("wort"))
-                .fluid()
+                .liquid()
                 .color(0x5c2211)
                 .build();
         Trub = new Material.Builder(22023, resLoc("trub"))
-                .fluid()
+                .liquid()
                 .color(0x947240)
                 .build();
         ImmatureBeer = new Material.Builder(22024, resLoc("immature_beer"))
-                .fluid()
+                .liquid()
                 .color(0x32a852)
                 .build();
 
         Beer = new Material.Builder(22025, resLoc("beer"))
-                .fluid()
+                .liquid()
                 .color(0xf28e1c)
                 .build();
         Yeast = new Material.Builder(22026, resLoc("yeast"))
@@ -59,23 +59,23 @@ public class MainMaterials {
                 .color(0xdac586)
                 .build();
         CaneJuice = new Material.Builder(22028, resLoc("canejuice"))
-                .fluid()
+                .liquid()
                 .color(0xaefd6c)
                 .build();
         RawMolasses = new Material.Builder(22029, resLoc("raw_molasses"))
-                .fluid()
+                .liquid()
                 .color(0x4f2c2a)
                 .build();
         Molasses = new Material.Builder(22030, resLoc("molasses"))
-                .fluid()
+                .liquid()
                 .color(0x574a47)
                 .build();
         RedWinePreferment = new Material.Builder(22031, resLoc("red_wine_preferment"))
-                .fluid()
+                .liquid()
                 .color(0x641b30)
                 .build();
         YoungRedWine = new Material.Builder(22032, resLoc("young_red_wine"))
-                .fluid()
+                .liquid()
                 .color(0x591620)
                 .build();
     }

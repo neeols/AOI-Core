@@ -24,7 +24,7 @@ public class AOIMetaTileEntities {
 
     public static void init() {
 
-        MetaTileEntities.registerSimpleMetaTileEntity(CSTR, 20000, "cstr", AOIRecipeMaps.CSTR, AOIClientHandler.CSTR_OVERLAY, true, AOIMetaTileEntities::location, GTUtility.hvCappedTankSizeFunction);
+        MetaTileEntities.registerSimpleMetaTileEntity(CSTR, 20000, "cstr", AOIRecipeMaps.CSTR, AOIClientHandler.CSTR_OVERLAY, true, AOIMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
         MetaTileEntities.registerSimpleMetaTileEntity(MILL, 20015, "mill", AOIRecipeMaps.MILL, AOIClientHandler.MILL_OVERLAY, true, AOIMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
         MetaTileEntities.registerSimpleMetaTileEntity(MORTAR_GRINDER, 20030, "mortar_grinder", AOIRecipeMaps.MORTAR_GRINDER, AOIClientHandler.MORTAR_GRINDER_OVERLAY, true, AOIMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
         MetaTileEntities.registerSimpleMetaTileEntity(ROASTER, 20045, "roaster", AOIRecipeMaps.ROASTER, AOIClientHandler.ROASTER_OVERLAY, true, AOIMetaTileEntities::location, GTUtility.defaultTankSizeFunction);
