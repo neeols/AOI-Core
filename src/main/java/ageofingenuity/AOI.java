@@ -33,9 +33,6 @@ public class AOI {
     public void preInit(FMLPreInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
 
-        AOIMetaBlocks.preInit();
-        AOIMetaTileEntities.init();
-
         if (AOISide.isClient())
             ClientProxy.earlyPreInit();
 
